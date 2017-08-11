@@ -202,8 +202,8 @@ h6 {
 .shapes-1 .text p {
   color: white;
   font-family: 'Biko';
-  text-align: justify;
-  word-break: break-all;
+  text-align: left;
+  /* word-spacing:-5px; */
   font-size: 20px;
   margin-top: 20px;
   background-color: #F67F23;
@@ -241,11 +241,11 @@ h6 {
 .shapes-2 .text p {
   color: white;
   font-family: 'Biko';
-  text-align: justify;
-  word-break: break-all;
+  text-align: left;
+  word-spacing:-2px;
   font-size: 20px;
-   margin-top: 20px;
-   background-color: black;
+  margin-top: 20px;
+  background-color: black;
 }
 
 .cont-services {
