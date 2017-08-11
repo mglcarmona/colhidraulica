@@ -192,7 +192,7 @@ h6 {
 
 .shapes-1 .text {
   width: 204px;
-  height: 280px;
+  height: 320px;
   background-color: #F67F23;
   margin-left: auto;
   margin-top: -150px;
@@ -203,6 +203,7 @@ h6 {
   color: white;
   font-family: 'Biko';
   text-align: justify;
+  word-break: break-all;
   font-size: 20px;
   margin-top: 20px;
   background-color: #F67F23;
@@ -226,7 +227,7 @@ h6 {
 
 .shapes-2 .text {
   width: 222px;
-  height: 350px;
+  height: 310px;
   background-color: black;
   margin-top: -150px;
   padding: 20px;
@@ -240,6 +241,7 @@ h6 {
   color: white;
   font-family: 'Biko';
   text-align: justify;
+  word-break: break-all;
   font-size: 20px;
    margin-top: 20px;
    background-color: black;
