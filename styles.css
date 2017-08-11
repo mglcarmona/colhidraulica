@@ -202,9 +202,10 @@ h6 {
 .shapes-1 .text p {
   color: white;
   font-family: 'Biko';
-  text-align: left;
+  text-align: justify;
   font-size: 20px;
   margin-top: 20px;
+  background-color: #F67F23;
 }
 
 .shapes-2 {
@@ -238,9 +239,10 @@ h6 {
 .shapes-2 .text p {
   color: white;
   font-family: 'Biko';
-  text-align: left;
+  text-align: justify;
   font-size: 20px;
-   margin-top: 20px; 
+   margin-top: 20px;
+   background-color: black;
 }
 
 .cont-services {
