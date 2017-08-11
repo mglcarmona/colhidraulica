@@ -1,3 +1,8 @@
+* {
+  outline: none;
+  /* box-sizing: border-box; */
+}
+
 @font-face {
   font-family: 'Biko';
   src: url('./fonts/biko.otf');
@@ -418,4 +423,179 @@ footer {
   height: 400px;
   width: 100vw;
   background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 60vw;
+  }
+  h3.cont-services {
+    width: 100%;
+    display: block;
+  }
+  .content.serv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-text {
+    text-align: center;
+  }
+  form {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+  input[type='submit'] {
+    width: 200px;
+  }
+  input, textarea {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+  .shapes-1 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .shapes-1 .image {
+    height: 300px;
+    width: 300px;
+  }
+  .shapes-2 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .shapes-2 .image {
+    height: 300px;
+    width: 300px;
+  }
+  .skewed-bg-img {
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .who-we-are p, .mision p, .vision p {
+    max-width: 500px;
+  }
+
+  .certification {
+    max-width: 300px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .above {
+    display: flex !important;
+  }
+  .header-p, .arrow-down, .contact-button {
+    display: none;
+  }
+  .logo {
+    width: 100vw;
+  }
+
+  .shapes-2, .shapes-1 {
+    display: none;
+  }
+  .repair {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.above {
+  display: none;
+}
+
+.above p {
+  display: inline-block;
+  max-width: 400px;
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #9B9B9B;
+  text-align: justify;
+}
+
+.links {
+  display: inline-block;
+  background-color: red;
+  height: 300px;
+  width: 500px;
+   margin-left: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links .link {
+  width: 20%;
+  height: 100%;
+  background-color: tomato;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.link a {
+  transform: rotate(-90deg) translate(0%, 50%); 
+  transform-origin: 0% 100%;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  font-size: 24px;
+  width: 200px;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 430px) and (max-width: 767px) {
+  .shapes-1 {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .shapes-1 .image {
+    height: 300px;
+    width: 300px;
+  }
+  .shapes-2 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .shapes-2 .image {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+input, textarea {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1054px) {
+  .logo {
+    width: 70vw;
+  }
+
+  .above p {
+    margin-left: 200px;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .machine-cont {
+    width: 55% !important;
+  }
 }

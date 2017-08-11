@@ -5,7 +5,7 @@ img {max-width: 100%;}
 	max-width: 960px;
 	display: block;
 	position: relative;
-	margin:20px auto;
+	margin:20px auto !important;
 	overflow: hidden;
 	margin: 70px 0; 
 }
