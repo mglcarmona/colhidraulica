@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Biko';
+  src: url('./fonts/biko.otf');
+}
+
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url('./fonts/c.ttf')
+}
+
 html, body {
   margin: 0;
   font-family: 'Biko'
