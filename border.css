@@ -28,6 +28,13 @@
   width: 0;
   height: 0;
 }
+
+.algo.draw::before, .algo.draw::after {
+  border: 6px solid transparent;
+  width: 0;
+  height: 0;
+}
+
 .draw::before {
   top: 0;
   left: 0;
@@ -56,6 +63,25 @@
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
+@media screen and (min-width: 1024px) {
+  
+  .algo.draw:hover {
+    color: yellow;
+  }
+  .algo.draw:hover::before {
+    border-top-color: yellow;
+    border-right-color: yellow;
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  }
+  .algo.draw:hover::after {
+    border-bottom-color: yellow;
+    border-left-color: yellow;
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  }
+}
+
 .buttons {
   isolation: isolate;
 }
@@ -66,7 +92,7 @@
   background-image: url('./Talleres-MAF_-Torno-CNC-Okuma.jpg');
   background-position: 55% 50%;
   background-size: 500px;
-  width: 340px;
+  width: 320px;
   height: 400px;
   background-color: #fafafa;
   position: relative;
@@ -75,7 +101,7 @@
 
 .rect {
   height: 400px;
-  width: 340px;
+  width: 320px;
   background-color: black;
   opacity: .7;
   position: absolute;
@@ -111,26 +137,106 @@
 }
 
 .machine-cont {
-  width: 75%;
+  width: 100vw;
   margin: 60px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.one, .two {
+  display: inline-block;
+}
+
+.three {
+  background-image: url('./prensa.jpeg');
+  background-size: 350px;
 }
 
 .two {
-  margin-left: auto;
-  margin-top: -160px;
+  /* margin-left: auto; */
+  /* margin-top: -160px; */
   background-image: url('./maquina.jpeg');
   background-size: 430px;
-  background-position: 55% -10%;
+  /* background-position: 55% -10%; */
 }
 
  .machine-cont {
   display: none;
 } 
 
+.who-we-are img, .textos img {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
-  .machine-cont {
-    display: block !important;
+  .textos {
+    margin-top: 70px;
   }
+
+  .machine-cont {
+    display: flex !important;
+  }
+  .skewed-bg-img {
+    background: black;
+  }
+
+  .who-we-are img, .textos img {
+    display: inline-block;
+    height: 600px;
+    width: 450px;
+    object-position: 75% 50%;
+    object-fit: cover;
+  }
+
+  .who-we-are .algo {
+    background-color: black;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    /* position: absolute; */
+    top: 60px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  .textos .algo {
+    background-color: black;
+    display: inline-block;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    box-sizing: border-box;
+  }
+
+  /* .who-we-are, .textos {
+    position: relative;
+  } */
+
+  .textos .algo {
+    height: 500px;
+  }
+
+  .algo p {
+    margin-top: 20px;
+    color: white;
+  }
+
+  .textos, .who-we-are {
+    display: flex;
+    justify-content: center;
+  }
+
+  .textos {
+    align-items: center;    
+  }
+
+  .textos p, .textos h3 {
+    text-align: left;
+    margin-left: 0;
+  }
+  
 }
 
 a {
@@ -181,4 +287,16 @@ footer a {
     margin: 0 10px;
     margin-top: 50px;
   }
+}
+
+a {
+  color: inherit;
+}
+
+.cycle-next, .cycle-prev, .cycle-pager {
+  opacity: .5;
+}
+
+.algo.draw {
+  margin: 0;
 }

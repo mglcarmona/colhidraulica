@@ -1,8 +1,8 @@
-img {max-width: 100%;}
+.cycle-slideshow img {width: 100%;}
 /* cycle-slideshow */
 .cycle-slideshow {
 	width: 100%;
-	max-width: 960px;
+	/* max-width: 960px; */
 	display: block;
 	position: relative;
 	margin:20px auto !important;

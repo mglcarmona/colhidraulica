@@ -282,7 +282,7 @@ h6 {
 .service span {
   font-family: 'Biko';
   font-size: 18px;
-  width: 260px;
+  width: 190px;
   margin-left: 15px;
 }
 
@@ -592,10 +592,12 @@ input, textarea {
   }
 
   .content {
-    width: 50%;
+    width: 90%;
   }
+}
 
+@media screen and (min-width: 1440px) {
   .machine-cont {
-    width: 55% !important;
+    width: 70% !important;
   }
 }
