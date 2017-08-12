@@ -312,7 +312,7 @@ h6 {
 .find-us-text {
   text-align: center;
   color: #9B9B9B;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -521,6 +521,7 @@ footer {
   font-size: 20px;
   color: #9B9B9B;
   text-align: justify;
+  padding-right: 20px;
 }
 
 .links {
@@ -537,10 +538,34 @@ footer {
 .links .link {
   width: 20%;
   height: 100%;
-  background-color: black;
   margin: 0;
   box-sizing: border-box;
   position: relative;
+}
+
+.link.uno {
+  background-image: url('./maquina-fondo.png');
+  background-size: cover;
+}
+.link.dos {
+  background-image: url('./maquina-fondo.png');
+  background-size: cover;
+  background-position: 100% 50%;
+}
+.link.tres {
+  background-image: url('./maquina-fondo.png');
+  background-size: cover;
+  background-position: 60% 10%;
+}
+.link.cuatro {
+  background-image: url('./maquina-fondo.png');
+  background-size: cover;
+  background-position: 40% 90%;
+}
+.link.cinco {
+  background-image: url('./maquina-fondo.png');
+  background-size: cover;
+  background-position: 0% 730%;
 }
 
 .link a {
@@ -600,4 +625,8 @@ input, textarea {
   .machine-cont {
     width: 70% !important;
   }
+}
+
+.find-us {
+  width: 100%;
 }
