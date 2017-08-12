@@ -29,7 +29,8 @@ h6 {
 }
 
 .skewed-bg-img {
-  clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
+  -webkit-clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
+          clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
   height: 100vh;
   max-height: 636px;
   background-image: url('./image.jpg');
@@ -47,9 +48,15 @@ h6 {
 .app-header {
   height: 60px;
   opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .burger {
@@ -272,10 +279,16 @@ h6 {
 }
 
 .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 46px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 25px;
 }
 
@@ -321,15 +334,22 @@ h6 {
   width: 272px;
   display: block;
   margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cool-button button {
   width: 33.3%;
   height: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: #F67F23;
@@ -434,9 +454,14 @@ footer {
     display: block;
   }
   .content.serv {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contact-text {
     text-align: center;
@@ -476,7 +501,8 @@ footer {
     width: 300px;
   }
   .skewed-bg-img {
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
   }
 
   .who-we-are p, .mision p, .vision p {
@@ -491,6 +517,8 @@ footer {
 
 @media screen and (min-width: 769px) {
   .above {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
   }
   .header-p, .arrow-down, .contact-button {
@@ -530,16 +558,23 @@ footer {
   height: 300px;
   width: 500px;
    margin-left: auto; 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .links .link {
   width: 20%;
   height: 100%;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 }
 
@@ -569,8 +604,12 @@ footer {
 }
 
 .link a {
-  transform: rotate(-90deg) translate(0%, 50%); 
-  transform-origin: 0% 100%;
+  -webkit-transform: rotate(-90deg) translate(0%, 50%);
+      -ms-transform: rotate(-90deg) translate(0%, 50%);
+          transform: rotate(-90deg) translate(0%, 50%); 
+  -webkit-transform-origin: 0% 100%; 
+      -ms-transform-origin: 0% 100%; 
+          transform-origin: 0% 100%;
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -604,7 +643,8 @@ footer {
 }
 
 input, textarea {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media screen and (min-width: 1054px) {
