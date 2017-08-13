@@ -10,17 +10,18 @@
 	margin: 70px 0; 
 }
 .cycle-prev, .cycle-next {
-	font-size: 200%;
-	color: #FFF;
+	font-size: 300%;
+	color: orange;
 	display: block;
 	position: absolute;
 	top: 50%;
 	margin-top: -16px;
 	z-index: 9999;
 	cursor: pointer;
+	opacity: 1 !important;
 }
-.cycle-prev {left: 10%;}
-.cycle-next {right: 10%;}
+.cycle-prev {left: 0%;}
+.cycle-next {right: 0%;}
 .cycle-pager {
 	width: 100%;
 	position: absolute;
