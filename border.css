@@ -149,7 +149,7 @@
 }
 
 .machine:hover p {
-  bottom: 160px;
+  bottom: 130px;
   color: white;
   padding: 0 15px;
   z-index: 1000;
